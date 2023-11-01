@@ -1,16 +1,21 @@
 
 import './App.css'
-import Blogs from './components/Blogs/blogs'
+import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
+import Header from './components/Header/Header'
 
 function App() {
- 
+
 
   return (
     <>
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <Blogs></Blogs>
+
+
+      <Header></Header>
+      <div className='md:flex max-w-6xl'>
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </>
   )
 }
